@@ -34,7 +34,9 @@
       <!-- navbar -->
       <div class="navbar container mx-auto py-3">
         <div class="navbar-start">
-          <a class="text-2xl font-black">
+          <a
+            class="text-2xl text-black font-bold flex justify-center items-center gap-1"
+          >
             <button
               class="inline-flex justify-center items-center w-5 h-5 lg:w-6 lg:h-6 text-center rounded-full bg-green-btn mr-1"
             >
@@ -79,15 +81,11 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a class="text-primary-black-text font-semibold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
           <button
@@ -608,5 +606,46 @@
       </section>
       <!-- new project discussion form section ends -->
     </main>
+    <!-- footer section starts -->
+    <footer class="footer footer-center bg-black text-white p-10">
+      <aside>
+        <div>
+          <a class="text-3xl font-bold flex justify-center items-center gap-1">
+            <button
+              class="inline-flex justify-center items-center w-5 h-5 lg:w-6 lg:h-6 text-center rounded-full bg-green-btn mr-1"
+            >
+              <i
+                class="ri-arrow-right-up-line text-black text-lg lg:text-xl"
+              ></i></button
+            >Rinterio
+          </a>
+        </div>
+        <p class="font-semibold text-secondary-gray-text w-4/6 mx-auto mt-3">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </aside>
+      <nav class="w-full">
+        <div class=" w-full">
+          <!-- menu  -->
+          <ul class="p-2 mt-2 mb-4 flex flex-col sm:flex-row justify-around items-center gap-5 w-4/6 mx-auto text-[#E9E9E9] ">
+            <li><a class="">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- button -->
+        <a
+          class="bg-green-btn inline-flex text-base sm:text-lg font-black px-4 py-1 sm:px-6 sm:py-2 rounded-3xl items-center text-primary-black-text"
+          >Book Consult
+          <button
+            class="inline-flex justify-center items-center w-5 h-5 sm:w-6 sm:h-6 text-center rounded-full bg-primary-black-text text-white ml-2"
+          >
+            <i class="ri-arrow-right-up-line text-xs sm:text-base font-light"></i></button
+        ></a>
+      </nav>
+    </footer>
   </body>
 </html>
