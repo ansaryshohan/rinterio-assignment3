@@ -13,6 +13,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
 
+    <!-- css file link -->
+    <link rel="stylesheet" href="./styles.css" />
+
     <!-- remix icon cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
@@ -152,12 +155,14 @@
                 light.
               </p>
               <a
-                class="font-bold text-lg px-16 py-3 rounded-3xl bg-light-green-btn"
-                >View Details
+                class="font-bold text-base px-4 sm:text-lg sm:px-16 py-3 rounded-3xl bg-green-btn"
+                >View details
                 <button
-                  class="inline-flex justify-center items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
+                  class="inline-flex justify-center items-center w-6 h-6 text-center rounded-full bg-black text-white mr-1"
                 >
-                  <i class="ri-arrow-right-up-line text-xl"></i></button
+                  <i
+                    class="ri-arrow-right-up-line text-base sm:text-lg"
+                  ></i></button
               ></a>
             </div>
           </div>
@@ -383,108 +388,225 @@
             </p>
           </div>
           <!-- cards content -->
-          <div>
-            <div class="grid grid-cols-1 sm:grid-cols-[.5fr_.5fr]
-            lg:grid-rows-2 lg:grid-cols-[.6fr_1.6fr_.2fr_.6fr] gap-6">
-              <!-- card-1   -->
-              <div class="sm:col-span-2 lg:col-span-2 flex flex-col items-center sm:flex-row  sm:justify-start sm:items-stretch gap-4 bg-base-100 shadow-xl border p-6 rounded-2xl">
-                <figure class="w-[100%] sm:w-[50%] h-full ">
-                  <img src="./assets/img1.png" alt="building" class="w-[95%] h-full rounded-xl object-cover" />
-                </figure>
-                <div class="w-[90%] sm:w-[45%] flex flex-col justify-between items-center sm:items-start  ">
-                  <h2 class="text-xl md:text-2xl font-bold">Commercial</h2>
-                  <p class="text-sm pt-3 md:pt-0 text-center sm:text-left">
-                    The barn house captivates with its blend of rustic charm and
-                    modern. The barn house captivates with its blend of rustic
-                    charm and modern .
-                  </p>
-                  <div class="card-actions justify-start">
-                    <a
-                      class="font-bold text-lg py-3 rounded-3xl"
-                      >View Details
-                      <button
-                        class="inline-flex justify-start items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
-                      >
-                        <i class="ri-arrow-right-up-line text-xl"></i></button
-                    ></a>
-                  </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-[.5fr_.5fr] lg:grid-rows-2 lg:grid-cols-[.6fr_1.6fr_.2fr_.6fr] gap-6"
+          >
+            <!-- card-1   -->
+            <div
+              class="sm:col-span-2 lg:col-span-2 flex flex-col items-center sm:flex-row sm:justify-start sm:items-stretch gap-4 bg-base-100 shadow-xl border p-6 rounded-2xl"
+            >
+              <figure class="w-[100%] sm:w-[50%] h-full">
+                <img
+                  src="./assets/img1.png"
+                  alt="building"
+                  class="w-[95%] h-full rounded-xl object-cover"
+                />
+              </figure>
+              <div
+                class="w-[90%] sm:w-[45%] flex flex-col justify-between items-center sm:items-start"
+              >
+                <h2 class="text-xl md:text-2xl font-bold">Commercial</h2>
+                <p class="text-sm pt-3 md:pt-0 text-center sm:text-left">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <div class="card-actions justify-start">
+                  <a class="font-bold text-lg py-3 rounded-3xl"
+                    >View Details
+                    <button
+                      class="inline-flex justify-start items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
+                    >
+                      <i class="ri-arrow-right-up-line text-xl"></i></button
+                  ></a>
                 </div>
               </div>
-              <!-- card-2 -->
-              <div class="lg:col-span-2 bg-base-100 shadow-xl border p-6 rounded-2xl">
-                <figure class="w-[100%] h-full ">
-                  <img src="./assets/img2.png" alt="building" class="w-[95%] h-full rounded-xl object-cover" />
-                </figure>
-              </div>
-              <!-- card-3 for small and medium device -->
-              <div class="bg-base-100 shadow-xl border p-6 rounded-2xl  lg:hidden">
-                <figure class="w-full h-full">
-                  <img
-                    src="./assets/img5.png"
-                    alt="building"
-                    class="w-full object-cover h-full rounded-xl"
-                  />
-                </figure>
-              </div>
-              <!-- card-3 for large device -->
-              <div class="bg-base-100 shadow-xl border p-6 rounded-2xl hidden lg:block">
-                <figure class="w-full h-full">
-                  <img
-                    src="./assets/img3.png"
-                    alt="building"
-                    class="w-full object-cover h-full rounded-xl"
-                  />
-                </figure>
-              </div>
-              <!-- card-4   -->
-              <div class="sm:col-span-2 lg:col-span-2 flex flex-col items-center sm:flex-row  sm:justify-start sm:items-stretch gap-4 bg-base-100 shadow-xl border p-6 rounded-2xl">
-                <figure class="w-[100%] sm:w-[50%] h-full ">
-                  <img src="./assets/img4.png" alt="building" class="w-[95%] h-full rounded-xl object-cover" />
-                </figure>
-                <div class="w-[90%] sm:w-[45%] flex flex-col justify-between items-center sm:items-start  ">
-                  <h2 class="text-xl md:text-2xl font-bold">Commercial</h2>
-                  <p class="text-sm pt-3 md:pt-0 text-center sm:text-left">
-                    The barn house captivates with its blend of rustic charm and
-                    modern. The barn house captivates with its blend of rustic
-                    charm and modern .
-                  </p>
-                  <div class="card-actions justify-start">
-                    <a
-                      class="font-bold text-lg py-3 rounded-3xl"
-                      >View Details
-                      <button
-                        class="inline-flex justify-start items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
-                      >
-                        <i class="ri-arrow-right-up-line text-xl"></i></button
-                    ></a>
-                  </div>
+            </div>
+            <!-- card-2 -->
+            <div
+              class="lg:col-span-2 bg-base-100 shadow-xl border p-6 rounded-2xl"
+            >
+              <figure class="w-[100%] h-full">
+                <img
+                  src="./assets/img2.png"
+                  alt="building"
+                  class="w-[95%] h-full rounded-xl object-cover"
+                />
+              </figure>
+            </div>
+            <!-- card-3 for small and medium device -->
+            <div class="bg-base-100 shadow-xl border p-6 rounded-2xl lg:hidden">
+              <figure class="w-full h-full">
+                <img
+                  src="./assets/img5.png"
+                  alt="building"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+              </figure>
+            </div>
+            <!-- card-3 for large device -->
+            <div
+              class="bg-base-100 shadow-xl border p-6 rounded-2xl hidden lg:block"
+            >
+              <figure class="w-full h-full">
+                <img
+                  src="./assets/img3.png"
+                  alt="building"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+              </figure>
+            </div>
+            <!-- card-4   -->
+            <div
+              class="sm:col-span-2 lg:col-span-2 flex flex-col items-center sm:flex-row sm:justify-start sm:items-stretch gap-4 bg-base-100 shadow-xl border p-6 rounded-2xl"
+            >
+              <figure class="w-[100%] sm:w-[50%] h-full">
+                <img
+                  src="./assets/img4.png"
+                  alt="building"
+                  class="w-[95%] h-full rounded-xl object-cover"
+                />
+              </figure>
+              <div
+                class="w-[90%] sm:w-[45%] flex flex-col justify-between items-center sm:items-start"
+              >
+                <h2 class="text-xl md:text-2xl font-bold">Commercial</h2>
+                <p class="text-sm pt-3 md:pt-0 text-center sm:text-left">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <div class="card-actions justify-start">
+                  <a class="font-bold text-lg py-3 rounded-3xl"
+                    >View Details
+                    <button
+                      class="inline-flex justify-start items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
+                    >
+                      <i class="ri-arrow-right-up-line text-xl"></i></button
+                  ></a>
                 </div>
               </div>
-              <!-- card-5 for small and medium devices -->
-              <div class="bg-base-100 shadow-xl border p-6 rounded-2xl lg:hidden">
-                <figure class="w-full h-full">
-                  <img
-                    src="./assets/img3.png"
-                    alt="building"
-                    class="w-full object-cover h-full rounded-xl"
-                  />
-                </figure>
-              </div>
-              <!-- card-5  for large and card-6 for small and medium devices-->
-              <div class="bg-base-100 shadow-xl border p-6 rounded-2xl ">
-                <figure class="w-full h-full">
-                  <img
-                    src="./assets/img5.png"
-                    alt="building"
-                    class="w-full object-cover h-full rounded-xl"
-                  />
-                </figure>
-              </div>
+            </div>
+            <!-- card-5 for small and medium devices -->
+            <div class="bg-base-100 shadow-xl border p-6 rounded-2xl lg:hidden">
+              <figure class="w-full h-full">
+                <img
+                  src="./assets/img3.png"
+                  alt="building"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+              </figure>
+            </div>
+            <!-- card-5  for large and card-6 for small and medium devices-->
+            <div class="bg-base-100 shadow-xl border p-6 rounded-2xl">
+              <figure class="w-full h-full">
+                <img
+                  src="./assets/img5.png"
+                  alt="building"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+              </figure>
             </div>
           </div>
         </div>
       </section>
       <!-- Our latest Portfolio ends -->
+      <!-- new project discussion form section starts -->
+      <section class="form-background">
+        <div class="container mx-auto py-4 lg:pt-16 pb-24">
+          <!-- title and subtitle of the section -->
+          <div class="flex flex-col items-center mb-5">
+            <div
+              class="bg-light-green-btn inline-block pl-3 pr-5 py-1 my-2 rounded-2xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 inline"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="none"
+              >
+                >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text-xs font-bold">Let’s Connect</span>
+            </div>
+            <h3
+              class="text-2xl lg:text-4xl font-bold text-primary-black-text text-center"
+            >
+              Let’s Discuss Next Project
+            </h3>
+            <p
+              class="pt-6 pb-8 text-secondary-gray-text text-base w-3/6 text-center"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- form content section -->
+          <div class="w-4/6 mx-auto">
+            <form class="flex justify-center items-center w-full space-y-12">
+              <div class="grid grid-cols-2 gap-4 w-full">
+                <div class="col-span-2 md:col-span-1">
+                  <input
+                    id="firstname"
+                    type="text"
+                    placeholder="First name*"
+                    class="w-full rounded-3xl px-5 py-4 text-base focus:ring focus:ring-opacity-75"
+                  />
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                  <input
+                    id="lastname"
+                    type="text"
+                    placeholder="Last name*"
+                    class="w-full rounded-3xl px-5 py-4 text-base focus:ring focus:ring-opacity-75"
+                  />
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Email address* "
+                    class="w-full rounded-3xl px-5 py-4 text-base focus:ring focus:ring-opacity-75"
+                  />
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                  <input
+                    id="phone"
+                    type="text"
+                    placeholder="Phone number*"
+                    class="w-full rounded-3xl px-5 py-4 text-base focus:ring focus:ring-opacity-75"
+                  />
+                </div>
+                <div class="col-span-2">
+                  <textarea
+                    id="message"
+                    placeholder="Write your message here"
+                    class="w-full rounded-xl h-40 p-5 focus:ring focus:ring-opacity-75"
+                  ></textarea>
+                </div>
+                <div class="col-span-2 text-center mt-4">
+                  <a
+                    class="font-bold text-base px-4 sm:text-lg sm:px-16 py-3 rounded-3xl bg-green-btn"
+                    >Send message
+                    <button
+                      class="inline-flex justify-center items-center w-6 h-6 text-center rounded-full bg-black text-white mr-1"
+                    >
+                      <i
+                        class="ri-arrow-right-up-line text-base sm:text-lg"
+                      ></i></button
+                  ></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- new project discussion form section ends -->
     </main>
   </body>
 </html>
