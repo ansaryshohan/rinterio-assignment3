@@ -24,10 +24,10 @@
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
     </style>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope bg-base-200">
     <!-- <h1 class="text-2xl font-bold">Hello new project
      <i class="ri-arrow-right-up-line"></i></h1> -->
-    <header class="bg-base-200 w-full">
+    <header class="w-full">
       <!-- navbar -->
       <div class="navbar container mx-auto py-3">
         <div class="navbar-start">
@@ -88,7 +88,7 @@
             </ul>
           </div>
           <button
-            class="w-9 h-9 mr-2 bg-white rounded-full border items-center justify-center hidden lg:inline-flex"
+            class="w-9 h-9 mr-2 bg-white rounded-full items-center justify-center hidden lg:inline-flex"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@
             </svg>
           </button>
           <button
-            class="w-9 h-9 mr-2 bg-white rounded-full border items-center justify-center hidden lg:inline-flex"
+            class="w-9 h-9 mr-3 bg-white rounded-full items-center justify-center hidden lg:inline-flex"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,9 @@
           <!-- banner content -->
           <div class="hero-content text-center">
             <div class="w-5/6 lg:w-4/6">
-              <h1 class="text-3xl lg:text-5xl font-bold text-primary-black-text">
+              <h1
+                class="text-3xl lg:text-5xl font-bold text-primary-black-text"
+              >
                 A barn house of this design has a striking appearance
               </h1>
               <p class="pt-6 pb-8 text-secondary-gray-text">
@@ -149,7 +151,8 @@
                 accents, and large windows that flood the space with natural
                 light.
               </p>
-              <a class="font-bold text-lg px-16 py-3 rounded-3xl bg-light-green-btn"
+              <a
+                class="font-bold text-lg px-16 py-3 rounded-3xl bg-light-green-btn"
                 >View Details
                 <button
                   class="inline-flex justify-center items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
@@ -161,5 +164,175 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- we design thought starts -->
+      <section class="container mx-auto py-4 lg:py-16">
+        <div class="hero bg-base-200 pt-4 lg:pt-10 relative">
+          <!-- the floating icon div -->
+          <div class="hidden lg:block absolute -top-5 left-0">
+            <img src="./assets/Vector.png" alt="arrow icon vector" />
+          </div>
+          <!-- hero section image and content div -->
+          <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+            <!-- hero image -->
+            <img
+              src="./assets/Rectangle.png"
+              class="max-w-[90%] max-w-[75%] rounded-lg shadow-2xl"
+            />
+            <!-- content part -->
+            <div class="flex flex-col items-center md:items-start">
+              <div
+                class="bg-white inline-block pl-3 pr-5 py-1 my-2 rounded-2xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 inline"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke="none"
+                >
+                  >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text-xs font-bold">About us</span>
+              </div>
+              <h3
+                class="text-3xl lg:text-5xl font-bold text-primary-black-text text-center md:text-left"
+              >
+                We design thoughtful, liveable spaces
+              </h3>
+              <p
+                class="pt-6 pb-8 text-secondary-gray-text text-base w-5/6 text-center md:text-left"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- small card 1 -->
+              <div
+                class="card card-side bg-base-100 shadow-xl w-11/12 py-4 mt-6 flex items-start"
+              >
+                <figure class="pl-8 pr-2">
+                  <img
+                    src="./assets/commercial.png"
+                    alt="building icon"
+                    class="mt-4 md:mt-0"
+                  />
+                </figure>
+                <div class="card-body py-1">
+                  <h3 class="text-xl font-bold text-primary-black-text">
+                    Commercial
+                  </h3>
+                  <p class="text-secondary-gray-text text-sm w-5/6">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <!-- small card 2 -->
+              <div
+                class="card card-side bg-base-100 shadow-xl w-11/12 py-4 mt-6 flex items-start"
+              >
+                <figure class="pl-8 pr-2">
+                  <img
+                    src="./assets/residential.png"
+                    alt="residential building icon"
+                    class="mt-4 md:mt-0"
+                  />
+                </figure>
+                <div class="card-body py-1">
+                  <h3 class="text-xl font-bold text-primary-black-text">
+                    Residential
+                  </h3>
+                  <p class="text-secondary-gray-text text-sm w-5/6">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- we design thought ends -->
+      <!-- Our work process section starts -->
+      <section class="container mx-auto py-4 lg:py-16">
+        <!-- title and subtitle of the section -->
+        <div class="flex flex-col items-center mb-5">
+          <div class="bg-white inline-block pl-3 pr-5 py-1 my-2 rounded-2xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 inline"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              stroke="none"
+            >
+              >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text-xs font-bold">How we works</span>
+          </div>
+          <h3
+            class="text-2xl lg:text-4xl font-bold text-primary-black-text text-center"
+          >
+            Our Works Process
+          </h3>
+          <p
+            class="pt-6 pb-8 text-secondary-gray-text text-base w-3/6 text-center"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- card grid div -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-8 sm:px-1">
+          <!-- card 1 -->
+          <div class="card bg-[#E7C1D3] text-primary-black-text ">
+            <div class="card-body">
+              <div>
+                <img src="./assets/concept.png" alt="">
+              </div>
+              <h2 class="card-title  my-1 text-black">Concept</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-[#EFDA6E] text-primary-black-text">
+            <div class="card-body">
+              <div>
+                <img src="./assets/flow-chart.png" alt="">
+              </div>
+              <h2 class="card-title  my-1 text-black">Design Process</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-[#A4DAC3] text-primary-black-text">
+            <div class="card-body">
+              <div>
+                <img src="./assets/vision.png" alt="">
+              </div>
+              <h2 class="card-title  my-1 text-black">Supervision</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card bg-[#77AAEA] text-primary-black-text">
+            <div class="card-body">
+              <div>
+                <img src="./assets/budget-planning.png" alt="" >
+              </div>
+              <h2 class="card-title my-1 text-black">Budget Planning</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our work process section ends -->
+    </main>
   </body>
 </html>
