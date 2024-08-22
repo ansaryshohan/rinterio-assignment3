@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <!-- daisyUI+tailwind cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <!-- remix icon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Manrope fonts  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+    </style>
+  </head>
+  <body class="font-manrope">
+    <!-- <h1 class="text-2xl font-bold">Hello new project
+     <i class="ri-arrow-right-up-line"></i></h1> -->
+    <header class="bg-base-200 w-full">
+      <!-- navbar -->
+      <div class="navbar container mx-auto py-3">
+        <div class="navbar-start">
+          <a class="text-2xl font-black">
+            <button
+              class="inline-flex justify-center items-center w-5 h-5 lg:w-6 lg:h-6 text-center rounded-full bg-green-btn mr-1"
+            >
+              <i class="ri-arrow-right-up-line text-lg lg:text-xl"></i></button
+            >Rinterio
+          </a>
+        </div>
+        <!-- large device menu -->
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 text-secondary-gray-text text-base"
+          >
+            <li><a class="text-primary-black-text font-semibold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <!-- small and medium screen dropdown icon and menu -->
+          <div class="dropdown dropdown-end lg:hidden">
+            <!-- 3dot icon -->
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <!-- menu  -->
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <button
+            class="w-9 h-9 mr-2 bg-white rounded-full border items-center justify-center hidden lg:inline-flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="none"
+            >
+              <path
+                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="w-9 h-9 mr-2 bg-white rounded-full border items-center justify-center hidden lg:inline-flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="none"
+            >
+              <path
+                d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM6.00436 7.00265V13.0027H17.5163L19.3163 7.00265H6.00436ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+              ></path>
+            </svg>
+          </button>
+          <!-- button and icons for the large screen -->
+          <a
+            class="bg-green-btn hidden lg:inline-flex text-xl font-black px-6 py-2 rounded-3xl items-center text-primary-black-text"
+            >Book Consult
+            <button
+              class="lg:inline-flex justify-center items-center hidden w-6 h-6 text-center rounded-full bg-primary-black-text text-white ml-2"
+            >
+              <i
+                class="ri-arrow-right-up-line text-base font-light"
+              ></i></button
+          ></a>
+        </div>
+      </div>
+      <!-- hero section -->
+      <div class="container mx-auto pb-10 pt-4">
+        <div class="">
+          <!-- banner image -->
+          <div class="grid place-content-center">
+            <img src="./assets/banner.png" alt="" class="w-[90%] mx-auto" />
+          </div>
+          <!-- banner content -->
+          <div class="hero-content text-center">
+            <div class="w-5/6 lg:w-4/6">
+              <h1 class="text-3xl lg:text-5xl font-bold text-primary-black-text">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="pt-6 pb-8 text-secondary-gray-text">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <a class="font-bold text-lg px-16 py-3 rounded-3xl bg-light-green-btn"
+                >View Details
+                <button
+                  class="inline-flex justify-center items-center w-6 h-6 text-center rounded-full bg-green-btn mr-1"
+                >
+                  <i class="ri-arrow-right-up-line text-xl"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
